@@ -4,7 +4,7 @@ import { Item, Inner, Container, Pane, Title, Subtitle, Image } from "./jumbotro
 export default function Jumbotron({ children, direction='row', ...restProps}) {
     return (
         <Item>
-            <Inner direction={direction}>
+            <Inner direction={direction} {...restProps}>
             {children}
             </Inner>
         </Item>
